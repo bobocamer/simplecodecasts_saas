@@ -3,10 +3,10 @@ $(document).ready(function() {
   // Watch for a form submission:
   $("#form-submit-btn").click(function(event) {
     event.preventDefault();
-    $$('input[type=submit]').prop('disabled', true);
+    $('input[type=submit]').prop('disabled', true);
     var error = false;
     var ccNum = $('#card_number').val(),
-        cvNum = $('#card_code').val(),
+        cvcNum = $('#card_code').val(),
         expMonth = $('#card_month').val(),
         expYear = $('#card_year').val();
     
